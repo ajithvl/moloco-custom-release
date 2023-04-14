@@ -1,0 +1,37 @@
+{
+  "name": "MolocoCustomAdapterIronSource",
+  "version": "1.0.6",
+  "summary": "Moloco SDK custom adapter for IronSource Mediation",
+  "authors": "Moloco, Inc.",
+  "homepage": "https://www.moloco.com/",
+  "license": {
+    "type": "Copyright",
+    "text": "\nCopyright 2023 Moloco, Inc. All rights reserved.\n\n"
+  },
+  "source": {
+    "http": "https://moloco-ios-build.s3.amazonaws.com/aj/MolocoCustomAdapterIronSource-1.0.6.zip",
+    "type": "zip"
+  },
+  "swift_version": "5.0",
+  "module_name": "MolocoCustomAdapterIronSource",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "frameworks": [
+    "Foundation"
+  ],
+  "vendored_frameworks": "MolocoCustomAdapterIronSource.xcframework",
+  "pod_target_xcconfig": {
+    "VALID_ARCHS[sdk=iphoneos*]": "arm64 armv7",
+    "VALID_ARCHS[sdk=iphonesimulator*]": "x86_64 arm64"
+  },
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC"
+  },
+  "dependencies": {
+    "IronSourceSDK": [">=7.2.7", "<7.4.0"],
+    "MolocoCustomAdapter": ["1.0.6"],
+    "MolocoSDKiOS": ["1.0.6"]
+  },
+  "description": "Moloco SDK Custom adapter for IronSource Mediation"
+}
