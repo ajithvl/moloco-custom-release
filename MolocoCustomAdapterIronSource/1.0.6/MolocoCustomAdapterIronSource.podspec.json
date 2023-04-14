@@ -29,7 +29,7 @@
     "OTHER_LDFLAGS": "-ObjC"
   },
   "dependencies": {
-    "IronSourceSDK": [">=7.2.7", "<7.4.0"],
+    "IronSourceSDK": [">=7.2.0", "<7.4.0"],
     "MolocoCustomAdapter": ["1.0.6"],
     "MolocoSDKiOS": ["1.0.6"]
   },
